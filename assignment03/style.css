@@ -35,7 +35,7 @@ body {
     padding: 70px 0;
 }
 
-.header-img {
+.header-profile {
     width: 140px;
     height: 140px;
     margin: 25px 0 10px;
@@ -43,13 +43,14 @@ body {
     border: 5px solid;
 }
 
-.header-ttl {
+.header-title {
     font-size: 80px;
 }
 
-.header-txt {
+.header-description {
     font-size: 12px;
     font-weight: bold;
+    text-indent: 4px;
     letter-spacing: 4px;
     width: fit-content;
     margin: 7px auto 0;
@@ -57,7 +58,7 @@ body {
     padding: 8px 5px 0;
 }
 
-.cont-sect {
+.section {
     background-color: white;
     background-repeat: no-repeat;
     background-position: bottom 30px right 30px;
@@ -67,25 +68,26 @@ body {
     box-shadow: 1px 1px 5px lightgrey;
 }
 
-.sect1 {
+.section_1 {
     background-image: url(images/icon-information.png);
 }
 
-.sect2 {
+.section_2 {
     background-image: url(images/icon-skills.png);
 }
 
-.sect-ttl {
+.section-title {
     color: #fc2293;
+    margin-bottom: 20px;
 }
 
-.sect-item {
+.list-item {
     color: #999;
     padding: 3px 10px;
     border-left: 5px solid #eaeaea;
 }
 
-.sect-item:hover {
+.list-item:hover {
     color: #fec1cc;
     border-color: #fec1cc;
 }
