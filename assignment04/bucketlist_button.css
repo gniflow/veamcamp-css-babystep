@@ -1,0 +1,68 @@
+/* CSS Resets */
+h1 {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+button {
+    font: inherit;
+    text-align: unset;
+}
+
+/* Components */
+body {
+    background-color: #ddd;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #212121;
+}
+
+.container {
+    background-color: #efefef;
+    width: 400px;
+    margin: 100px auto;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow:
+        -.1px -.1px 10px .1px rgba(60, 60, 60, 0.2),
+        3px 3px 10px 1px rgba(60, 60, 60, 0.2);
+}
+
+.header {
+    background-color: white;
+    padding: 50px 0;
+    border-bottom: 5px solid #ddd;
+}
+
+.header-title {
+    color: #fc2293;
+    padding-left: 20px;
+    font-size: 26px;
+    border-left: 10px solid;
+}
+
+.list {
+    padding: 20px 30px;
+}
+
+.list-button {
+    background-color: white;
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px 12px;
+    border: 4px solid #aaa;
+    border-radius: 5px;
+}
+
+.list-button:active {
+    content: "";
+    background-image: url(images/check.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    color: #1787fb;
+    border: 4px solid;
+}
