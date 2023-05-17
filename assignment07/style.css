@@ -1,0 +1,154 @@
+/* Reset */
+body, h1, h2, h3, p {
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+/* Components */
+body {
+    background-color: #000;
+    color: #868686;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    background-color: #111;
+}
+
+.header-wrapper {
+    background-color: #111;
+    width: 2048px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-title {
+    text-indent: -9999px;
+}
+
+.header-description {
+    flex-grow: 1;
+}
+
+.header-description::before {
+    content: "";
+    display: inline-block;
+    width: 100px;
+    margin: 0 30px 0 50px;
+    border: 1px solid;
+    vertical-align: middle;
+}
+
+.header-point {
+    margin-top: auto;
+    margin-right: 100px;
+}
+
+.contents-wrapper {
+    width: 2048px;
+    margin: 50px auto;
+    display: flex;
+    gap: 50px;
+    justify-content: flex-start;
+}
+
+.sidebar {
+    width: 400px;
+    flex-shrink: 0;
+}
+
+.sidebar-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.sidebar-title {
+    display: inline-block;
+    font-size: 24px;
+    margin: 10px;
+}
+
+.sidebar-list {
+    background-color: #111;
+}
+
+.list-title {
+    color: #ec7b71;
+    border-top: 1px solid;
+    margin-top: 5px;
+    padding: 15px;
+}
+
+.list {
+    margin-left: 30px;
+}
+
+.list-item {
+    padding: 5px 0;
+    margin: 5px 0;
+}
+
+.list-item:first-child, .list-item:nth-child(2) {
+    content: "";
+    border-bottom: 1px solid;
+}
+
+.list-item:last-child {
+    padding-bottom: 20px;
+}
+
+.cards-wrapper {
+    flex-grow: 1;
+    width: 1648px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.card {
+    background-color: #202020;
+    width: 480px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.card-contents {
+    margin: 30px;
+}
+
+.card-title {
+    font-size: 22px;
+    color: #b88c94;
+}
+
+.card-description {
+    font-size: 21px;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+.card-button {
+    display: block;
+    color: #b43317;
+    font-weight: bold;
+    text-align: center;
+    text-indent: 5px;
+    letter-spacing: 5px;
+    background-color: #0f0f0f;
+    width: 450px;
+    margin: 20px auto;
+    padding: 20px 0;
+    border-radius: 10px;
+}
