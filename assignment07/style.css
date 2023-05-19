@@ -14,6 +14,13 @@ ul {
     list-style-type: none;
 }
 
+/* Layouts */
+.wrapper {
+    box-shadow: inset 0 0 20px red;
+    width: 2048px;
+    margin: 0 auto;
+}
+
 /* Components */
 body {
     background-color: #000;
@@ -25,10 +32,7 @@ body {
     background-color: #111;
 }
 
-.header-wrapper {
-    background-color: #111;
-    width: 2048px;
-    margin: 0 auto;
+.header-inside {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -53,15 +57,12 @@ body {
 
 .header-point {
     margin-top: auto;
-    margin-right: 100px;
 }
 
-.contents-wrapper {
-    width: 2048px;
+.contents {
     margin: 50px auto;
     display: flex;
     gap: 50px;
-    justify-content: flex-start;
 }
 
 .sidebar {
@@ -69,47 +70,51 @@ body {
     flex-shrink: 0;
 }
 
-.sidebar-icon {
-    width: 20px;
-    height: 20px;
-}
-
 .sidebar-title {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-size: 24px;
     margin: 10px;
 }
 
-.sidebar-list {
-    background-color: #111;
+.sidebar-title::before {
+    content: ' ';
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-image: url(images/icon.png);
+    background-size: cover;
 }
 
-.list-title {
+.category {
+    background-color: #111;
+    padding-bottom: 20px;
+}
+
+.category-title {
     color: #ec7b71;
     border-top: 1px solid;
     margin-top: 5px;
     padding: 15px;
 }
 
-.list {
+.category-list {
     margin-left: 30px;
 }
 
-.list-item {
+.category-list li {
     padding: 5px 0;
     margin: 5px 0;
-}
-
-.list-item:first-child, .list-item:nth-child(2) {
-    content: "";
     border-bottom: 1px solid;
 }
 
-.list-item:last-child {
-    padding-bottom: 20px;
+.category-list li:last-child {
+    border-bottom: 0;
 }
 
 .cards-wrapper {
+    box-shadow: inset 0 0 20px blue;
     flex-grow: 1;
     width: 1648px;
     display: flex;
@@ -119,9 +124,14 @@ body {
 
 .card {
     background-color: #202020;
-    width: 480px;
+    width: 510px;
+    flex-grow: 1;
     overflow: hidden;
     border-radius: 10px;
+}
+
+.card-cover {
+    width: 100%;
 }
 
 .card-contents {
@@ -147,8 +157,7 @@ body {
     text-indent: 5px;
     letter-spacing: 5px;
     background-color: #0f0f0f;
-    width: 450px;
-    margin: 20px auto;
+    margin: 20px;
     padding: 20px 0;
     border-radius: 10px;
 }
