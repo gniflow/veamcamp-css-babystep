@@ -1,0 +1,132 @@
+/* Resets */
+body {
+    margin: initial;
+}
+
+h1, h2, p {
+    margin: initial;
+    font-weight: inherit;
+}
+
+/* Layouts */
+.wrapper {
+    width: 680px;
+    margin: 0 auto;
+}
+
+/* Designs */
+body {
+    background-color: #ebebeb;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+    background-image: url(images/insideout-bg.png);
+    background-size: cover;
+    background-position: center;
+    padding: 70px 0;
+}
+
+.header-title {
+    background-color: #d93b24;
+    color: #fff;
+    font-size: 84px;
+    /* vw */
+    font-weight: 900;
+    text-align: center;
+}
+
+.contents {
+    margin: 20px 0;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section {
+    background-color: #fff;
+    text-align: right;
+    padding: 30px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.section:nth-child(even) {
+    flex-direction: row-reverse;
+    text-align: left;
+}
+
+.section-point {
+    width: 150px;
+}
+
+.section-title {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.section-title span {
+    position: relative;
+    padding-bottom: 8px;
+}
+
+.section-title span::before {
+    content: ' ';
+    border-radius: 30px;
+    position: absolute;
+    height: 5px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.section-description {
+    color: #8b8b8b;
+    font-size: 10px;
+    line-height: 1.5;
+    display: flex;
+    gap: 40px;
+}
+
+.joy .section-point {
+    margin: -30px 5px 0;
+}
+
+.joy span {
+    color: #e4a638;
+}
+
+.joy span::before {
+    content: ' ';
+    background-color: #dd8778;
+}
+
+.sadness .section-point {
+    margin: auto -10px -30px 30px;
+}
+
+.sadness span {
+    color: #5992f8;
+}
+
+.sadness span::before {
+    content: ' ';
+    background-color: #a1cce8;
+}
+
+.anger .section-point {
+    margin: auto 30px -30px 10px;
+}
+
+.anger span {
+    color: #db5c30;
+}
+
+.anger span::before {
+    content: ' ';
+    background-color: #f3d645;
+}
