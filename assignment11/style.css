@@ -1,0 +1,123 @@
+/* Resets */
+body {
+    margin: 0;
+}
+
+h1, h2, p {
+    margin: 0;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: initial;
+}
+
+/* Layouts */
+.wrapper {
+    max-width: 980px;
+    margin: 50px auto;
+}
+
+/* Design */
+body {
+    background-color: #222;
+}
+
+.movie {
+    background-color: #111;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.movie-cover {
+    width: 980px;
+}
+
+.movie-contents {
+    width: 980px;
+    min-height: 500px;
+    margin-top: -150px;
+    display: flex;
+    gap: 80px;
+}
+
+.movie-main {
+    flex-grow: 1;
+    padding: 30px;
+}
+
+.movie-title {
+    font-size: 60px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.movie-title:before {
+    content: 'NEW';
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-indent: 4px;
+    background-color: #ee431c;
+    width: 60px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    border-bottom: 5px solid #c93815;
+}
+
+.movie-description {
+    color: #848484;
+}
+
+.movie-description p+p {
+    margin-top: 20px;
+}
+
+.movie-side {
+    width: 200px;
+    flex-shrink: 0;
+}
+
+.movie-side h2 {
+    margin: 30px 0;
+}
+
+.tag-unit {
+    padding: 0 1px;
+}
+
+.tag-unit a {
+    font-size: 10px;
+    color: #848484;
+    display: inline-block;
+    background-color: #222;
+    width: 50px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    margin: 2px 0;
+    border-radius: 5px;
+}
+
+.star {
+    width: 180px;
+}
+
+.casts {
+    display: flex;
+}
+
+.casts img {
+    width: 40px;
+    border-radius: 50%;
+    border: 3px solid black;
+    margin-left: -8px;
+}
