@@ -13,27 +13,26 @@ a {
     text-decoration: initial;
 }
 
-/* Layouts */
-.wrapper {
-    width: 1440px;
-    margin: 100px auto;
-    display: flex;
+/* Commons */
+.button {
+    color: #666;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-indent: 3px;
+    display: block;
+    background-color: #eee;
+    min-height: 30px;
+    line-height: 30px;
 }
 
-.sidebar {
-    width: 270px;
-    padding: 25px;
-    flex-shrink: 0;
+.button+.button {
+    margin-top: 7px;
 }
 
-.contents {
-    padding: 30px;
-    flex-grow: 1;
-    min-width: 0;
-}
-
-.section+.section {
-    margin-top: 50px;
+.button_primary {
+    background-color: #2793fb;
+    color: #fff;
 }
 
 /* Components */
@@ -46,12 +45,19 @@ body {
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 1px 1px 20px 10px #ddd;
+
+    width: 1600px;
+    margin: 100px auto;
+    display: flex;
 }
 
 .sidebar {
     background-image: url(images/sidebar-background.png);
     background-size: cover;
     position: relative;
+    width: 270px;
+    padding: 25px;
+    flex-shrink: 0;
 }
 
 .sidebar-title {
@@ -87,7 +93,6 @@ body {
     position: absolute;
     right: 30px;
     top: 10px;
-    float: right;
 }
 
 .sidebar-description {
@@ -96,65 +101,57 @@ body {
     margin-bottom: 30px;
 }
 
-.sidebar-button {
-    color: #666;
-    text-align: center;
-    font-weight: bold;
-    letter-spacing: 3px;
-    text-indent: 3px;
-    display: block;
-    background-color: #eee;
-    width: 270px;
-    min-height: 30px;
-    line-height: 30px;
-    margin-top: 7px;
-}
-
-.sidebar .button-location {
-    background-color: #2793fb;
-    color: #fff;
-}
-
 .contents {
     background-color: #fff;
     color: #999;
+    padding: 30px;
+    flex-grow: 1;
+    min-width: 0;
+}
+
+.section+.section {
+    margin-top: 50px;
 }
 
 .section-title {
     display: flex;
-    justify-content: space-between;
     border-bottom: 10px solid #f0f0f0;
 }
 
 .section-title h2 {
+    flex-grow: 1;
     font-size: 36px;
 }
 
-.section-title a {
-    margin: 16px 0;
-}
-
-.section-title span {
+.section-anchor {
+    margin: 16px 0 16px auto;
     background-color: #f0f0f0;
     padding: 5px 16px;
     border-radius: 30px;
 }
 
-.section-inside {
+.section-contents {
     margin: 20px 0 0;
+}
+
+.grid {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
-    overflow: scroll;
 }
 
-.section-inside .coffee {
-    width: 160px;
+.coffee {
+    flex-basis: calc(16.6666666% - (20px * 5 / 6));
 }
 
-.section-inside .review-box {
+.coffee-cover {
+    width: 100%;
+}
+
+.review {
     background-color: #f0f0f0;
     font-size: 18px;
-    min-width: 340px;
+    flex-basis: calc(33.333333% - (20px * 2 / 3));
     min-height: 340px;
     box-sizing: border-box;
     padding: 30px;
@@ -164,12 +161,12 @@ body {
     justify-content: space-between;
 }
 
-.section-inside .review {
+.review-description {
     line-height: 1.2;
     padding-bottom: 30px;
 }
 
-.section-inside .reviewer {
+.review-author {
     color: #313131;
     text-align: right;
 }
